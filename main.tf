@@ -18,7 +18,7 @@ resource "aws_s3_bucket" "terraform_state" {
 
   tags = {
     Name    = "prk-terraform-state"
-    Purpose = "Terraform remote state — all Gen AI portfolio projects"
+    Purpose = "Terraform remote state - all Gen AI portfolio projects"
     Owner   = "prk"
   }
 }
@@ -66,7 +66,7 @@ resource "aws_dynamodb_table" "terraform_lock" {
 
   tags = {
     Name    = "prk-terraform-state-lock"
-    Purpose = "Terraform state locking — all Gen AI portfolio projects"
+    Purpose = "Terraform state locking - all Gen AI portfolio projects"
     Owner   = "prk"
   }
 }
